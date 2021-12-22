@@ -1,0 +1,43 @@
+<!--users/index.wxml-->
+<!-- 用户信息 -->
+<view class = "container">
+  <view class="userinfo">
+    <block wx:if="{{canIUseOpenData}}">
+      <view class="userinfo-avatar" bindtap="bindViewTap">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <open-data type="userNickName"></open-data>
+    </block>
+    <!-- 获取用户信息 -->
+    <block wx:elif="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+    </view>
+</view>
+
+<view class="weui-panel__ft">
+				<navigator class="weui-cell weui-cell_active weui-cell_access weui-cell_link" url="/subpage/about_us">
+					<text class="weui-cell__bd">关于我们</text>
+					<text class="weui-cell__ft"></text>
+				</navigator>
+        <navigator class="weui-cell weui-cell_active weui-cell_access weui-cell_link" url="../subpage/4">
+					<text class="weui-cell__bd">设置</text>
+					<text class="weui-cell__ft"></text>
+          
+				</navigator>
+        <navigator class="weui-cell weui-cell_active weui-cell_access weui-cell_link" url="javascript:">
+					<text class="weui-cell__bd">试试手气？</text>
+					<text class="weui-cell__ft"></text>
+				</navigator>
+			</view>
+      <view class="weui-footer">
+            <view class="weui-footer__links">
+                <navigator url="" class="weui-footer__link">底部链接</navigator>
+            </view>
+            <view class="weui-footer__text">Copyright © 2008-2016 weui.io</view>
+        </view>

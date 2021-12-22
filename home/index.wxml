@@ -1,0 +1,67 @@
+<!-- 主页面 -->
+<page-meta root-font-size="system"/>
+
+<scroll-view scroll-y="true" style="height: 1000px">
+<richtext class = 'weui-panel__hd'>一起踝泵运动吧!!!:)</richtext>
+<!-- 幻灯片 -->
+<view class="swiper_container">
+    <swiper
+      indicator-dots='true' autoplay='true' circular='true' vertical= false
+      interval="10000" duration="1000" previous-margin="0px" next-margin="0px">
+      
+      <block wx:for="{{background}}" wx:key="*this">
+        <swiper-item>
+          <image mode ="scaleToFill " src="{{item.src}}"  class="slide-image"/> 
+        </swiper-item>
+      </block>
+    </swiper>
+</view>
+<!-- 页面中导航栏 -->
+<view class="subpageNavList">
+	<block wx:for="{{subpageNavSubject}}"wx:key="index" >
+		<view class="item">
+			<navigator url="../subpage/{{index+1}}">
+				<image mode="aspectFill" src="{{item.icon}}"></image>
+				<text>{{item.title}}</text>
+			</navigator>
+		</view>
+	</block>
+</view>
+<!-- 今日情况 -->
+<view wx:if="{{!condition}}"><badge content = "今日还没有做运动哦"></badge></view>
+<view wx:if="{{condition}}"><badge content = "今日已经运动过了"></badge></view>
+
+<!-- api提供科普新闻 每天更新，点击进行跳转到相应article？ -->
+<view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
+	<view class="page__bd">
+		<view class="weui-panel weui-panel_access">
+			<view class="weui-panel__hd">你知道吗？</view>
+			<view wx:for="{{shownewslist}}" wx:key ="index" class="weui-panel__bd">
+				<navigator aria-labelledby="js_p1m1_bd" class="weui-media-box weui-media-box_appmsg" url="javascript:">
+					<view aria-hidden="true" class="weui-media-box__hd">
+						<image class="weui-media-box__thumb" src="{{item.picUrl}}" alt></image>
+					</view>
+					<view aria-hidden="true" id="js_p1m1_bd" class="weui-media-box__bd">
+						<text class="weui-media-box__title">{{item.title}}</text>
+						<view class="weui-media-box__desc">{{item.description}}</view>
+					</view>
+				</navigator>
+			</view>
+			<view class="weui-panel__ft">
+				<navigator class="weui-cell weui-cell_active weui-cell_access weui-cell_link" url="/subpage/more">
+					<text class="weui-cell__bd">查看更多</text>
+					<text class="weui-cell__ft"></text>
+				</navigator>
+			</view>
+		</view>
+        <view class="weui-footer">
+            <view class="weui-footer__links">
+                <navigator url="" class="weui-footer__link">底部链接</navigator>
+            </view>
+            <view class="weui-footer__text">Copyright © 2008-2016 weui.io</view>
+        </view>
+		
+	</view>
+</view>
+
+</scroll-view>

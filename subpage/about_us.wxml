@@ -1,0 +1,9 @@
+<!--subpage/about_us.wxml-->
+<!-- 顶部轮播  -->
+<view class ="about_us_containter">
+    <view >
+      <text class ='title'>\n关于这个小程序的说明</text>
+      <text class ='body'>\n\n欢迎看到这篇说明的各位朋友🙂，很高兴能有人看到这个小程序，很可惜这只是一篇毕业设计，我估计不会有大的作用，但是我还是很高心，因为第一次一个人做出一个产品（虽然没有实际意义），但是这个完成度比我以往做的多得多，我从这里面感受到了成就感，希望以后也有机会继续做东西来自找不到工作要饿死了\n</text>
+      <text class ='footer'>——Madtoby\n</text>
+    </view>
+</view>

@@ -1,0 +1,14 @@
+<!--exercise/index.wxml-->
+<view class="content">
+ <!-- 蓝牙 -->
+ <button type="primary" class="button" bindtap="lanya1"><text>初始化</text></button>
+<!-- 开始 -->
+ </view>
+ <mp-cells title="连接设备">
+    <mp-checkbox-group prop="radio" multi="{{false}}" bindchange="radioChange">
+        <mp-checkbox wx:for="{{radioItems}}" wx:key="value" label="{{item.name}}" value="{{item.value}}" checked="{{item.checked}}"></mp-checkbox>
+    </mp-checkbox-group>
+</mp-cells>
+<view class = 'container'>
+  <button bindtap='anklepump' type="primary" ><text>开始</text></button> 
+</view>

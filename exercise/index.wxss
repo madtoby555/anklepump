@@ -1,0 +1,25 @@
+/* exercise/index.wxss */
+page{
+  background-color:floralwhite;
+}
+button {
+  border :none;
+  width:200rpx;
+  height:200rpx;
+  border-radius:200rpx;
+  font-size :48rpx;
+}
+text{
+  position:relative;
+  top:30rpx;
+}
+.container{
+  position:absolute;
+  bottom: 500rpx;
+  left:0; right: 0;
+}
+.content{
+  position: absolute;
+  top:400rpx;
+  left:0;right:0;
+}

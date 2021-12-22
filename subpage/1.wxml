@@ -1,0 +1,34 @@
+<!--subpage/1.wxml-->
+<view class="page" data-weui-theme="{{theme}}">
+    <view class="page__bd">
+        <view class="weui-article">
+            <view class="weui-article__h1">踝泵运动</view>
+            <view class="weui-article__section">
+                <view class="weui-article__h2">为什么要做踝泵运动？</view>
+                <view class="weui-article__section">
+                    <view class="weui-article__p">
+                      因为长期卧床或手术之后的制动，均可能导致血流变慢，血小板在血管周边停留和聚集，容易形成血栓，这些因素都会影响下肢功能的恢复。而早期的血栓有时可以活动，万一血栓不幸脱落，可以引起肺部或脑部等地方的栓塞。
+                    </view>
+                    <view class="weui-article__p">
+                        <image class="weui-article__img" src="../source/bangzhu1.jpeg" mode="aspectFit" style="height: 180px" />
+                    </view>
+                </view>
+                <view class="weui-article__section">
+                    <view class="weui-article__h3">踝泵运动的原理是什么？</view>
+                    <view class="weui-article__p">
+                      跖屈（绷脚尖）时，小腿三头肌收缩变短，胫骨前肌放松伸长；背伸（勾脚尖）时，胫骨前肌收缩变短，小腿三头肌放松伸长。肌肉收缩时，血液和淋巴液受挤压回流，肌肉放松时，新鲜血液补充。通过这样简单的屈伸脚踝，可以有效促进整个下肢的血液循环。环绕动作原理类似。
+                    </view>
+                    <view class="weui-article__p">
+                        <image class="weui-article__img" src="../source/bangzhu2.jpeg" mode="aspectFit" style="height: 180px" />
+                    </view>
+                </view>
+                <view class="weui-article__section">
+                    <view class="weui-article__h3">怎样做踝泵运动？</view>
+                    <view class="weui-article__p">
+                      踝泵运动分为屈伸和绕环两组动作。<text style="font-weight: bold;">\n屈伸动作</text>：您可以躺或坐在床上，下肢伸展，大腿放松，缓缓勾起脚尖，尽力使脚尖朝向自己，至最大限度时保持10秒钟，然后脚尖缓缓下压，至最大限度时保持10秒钟，然后放松，这样一组动作完成。稍休息后可再次进行下一组动作。反复地屈伸踝关节，最好每个小时练习5分钟，一天练5~8次。<text style="font-weight: bold;">\n绕环动作</text>：您可以躺或坐在床上，下肢伸展，大腿放松，以踝关节为中心，脚趾作360度绕环，尽力保持动作幅度最大。绕环可以使更多的肌肉得到运动。可顺时针和逆时针交替进行。
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

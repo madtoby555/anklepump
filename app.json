@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "home/index",
+    "users/index",
+    "exercise/index",
+    "subpage/1",
+    "subpage/2",
+    "subpage/3",
+    "subpage/4",
+    "subpage/5",
+    "subpage/about_us",
+    "subpage/more"
+
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "踝泵运动",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "home/index",
+        "iconPath": "/source/home.png",
+        "selectedIconPath": "/source/home_selected.png",
+        "text": "主页"
+      },
+      {
+        "pagePath": "exercise/index",
+        "iconPath": "/source/exercise.png",
+        "selectedIconPath": "/source/exercise_selected.png",
+        "text": "锻炼"
+      },
+      {
+        "pagePath": "users/index",
+        "iconPath": "/source/person-outline.png",
+        "selectedIconPath": "/source/person_selected.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

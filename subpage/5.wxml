@@ -1,0 +1,2 @@
+<!--subpage/5.wxml-->
+<toptips msg ="{{error}}" type = "error" show ="{{error}}"></toptips>

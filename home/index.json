@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "badge":"/miniprogram_npm/weui-miniprogram/badge/badge",
+    "mp-navigation-bar": "/miniprogram_npm/weui-miniprogram/navigation-bar/navigation-bar"
+  }
+}

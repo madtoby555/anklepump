@@ -1,0 +1,12 @@
+/* subpage/about_us.wxss */
+.about_us_containter{
+  background-color:bisque;
+  text-align: center;
+  border-radius: 50rpx;
+  width: 300px;
+  margin: 50px auto;
+}
+.title{
+  color:brown;
+  font-size: smaller;
+}
